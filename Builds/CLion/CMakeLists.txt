@@ -1497,7 +1497,7 @@ target_link_libraries (CONSOLEAPP PRIVATE
     ${LIBCURL_LIBRARIES}
 )
 
-set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -pthread -g -ggdb -O0 -march=armv6 -mcpu=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp")
+set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -pthread -g -ggdb -O0 -mcpu=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp")
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CMAKE_C_FLAGS} ")
 
 endif (CMAKE_BUILD_TYPE STREQUAL Debug)
@@ -1570,7 +1570,7 @@ target_link_libraries (CONSOLEAPP PRIVATE
     ${LIBCURL_LIBRARIES}
 )
 
-set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -pthread -O3 -march=armv6 -mcpu=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp")
+set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -pthread -O3 -mcpu=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp")
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CMAKE_C_FLAGS} ")
 
 endif (CMAKE_BUILD_TYPE STREQUAL Release)
